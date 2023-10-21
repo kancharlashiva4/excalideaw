@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excalidraw</title>
+   <link rel="stylesheet" href="./style.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preload" href="/Virgil.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+      <link rel="preload" href="/Cascadia.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body>
+    <div id="top">
+        <div class="dropdown">
+            <button class="  menu dropdown-toggle btn btn-sm btn-outline-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
+              <i class="fa-solid fa-bars"></i> </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-folder-open"></i>open</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-download"></i>Save to...</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-arrow-down"></i>Export i...</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group"></i> Live Collaboration...</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-circle-question"></i>Help</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-trash-can"></i>Reset Canvas</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gift"></i>Excalidraw</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-github"></i>GitHub</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-discord"></i>Discord </a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-moon"></i>Dark mode</a></li>
+            </ul>
+          </div>
+        <div class="options">
+        <button class="btn material-symbols-outlined">lock</button>
+        <div class="vertical-line"></div>
+        <button class="btn material-symbols-outlined">pan_tool</button>
+        <button class="btn material-symbols-outlined">north_west</button>
+        <button class="btn material-symbols-outlined">check_box_outline_blank</button>
+        <button class="btn material-symbols-outlined">line_start_diamond</button>
+        <button class="btn material-symbols-outlined">brightness_1</button>
+        <button class="btn material-symbols-outlined">east</button>
+        <button class="btn material-symbols-outlined">horizontal_rule</button>
+        <button class="btn material-icons active" id="pencile">edit</button>
+        <button class="btn material-symbols-outlined">text_format</button>
+        <button class="btn material-symbols-outlined">imagesmode</button>
+        <button class="btn material-symbols-outlined">ink_eraser</button>
+        <div class="vertical-line"></div>
+        <button class="btn material-symbols-outlined">more_up</button>
+        <input type="color" id="color-picker">
+        </div>
+        <div>
+            <button class="btn btn-sm btn-outline-secondary" style="background-color: rgb(103, 103, 250);padding: 8px;margin: 7px;"><i class="fa-solid fa-user-group"></i></button>
+            <button class="btn btn-sm btn-outline-secondary" style="padding: 10px;margin: 7px;"><i class="fa-solid fa-book-open"></i>Library</button>
+            </div>
+    </div>
+    <div>
+    <section class="logo">
+        <img src="./image/logo.jpg"><h1 class="logo">EXCALIDRAW</h1>
+      </section>
+      <section class="open">
+        <ul>
+        <p style="color: gray;">All your data is saved locally in your browser.</p>
+            <a class="nav-link" href="#"><i class="fa-regular fa-folder-open"></i>open</a> 
+            <a class="nav-link" href="#"><i class="fa-regular fa-circle-question"></i>Help</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-user-group"></i> Live Collaboration</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-gift"></i>Try Excalidraw Plus!</a>
+          </ul>
+      </section>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="bottom ">
+        <button class="btn material-icons">horizontal_rule</button>
+        <button class="btn">100%</button>
+        <button class="btn material-icons">add</button>
+        
+            <div class="options">
+        <button class="btn material-icons">undo</button>
+        <button class="btn material-icons">redo</button>
+        </div>
+        <div class="options">
+        <button class="btn material-icons">check</button>
+        <button class="btn material-icons">help</button>
+    </div>
+</div>
+    <script src="./script.js"></script>
+    <script src="./freehand.js"></script>
+</body>
+</html>
